@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         Vector2 direction = mousePos - (Vector2)transform.position;
+        transform.up = direction;
     }
 
     public void OnMove(InputAction.CallbackContext context)
