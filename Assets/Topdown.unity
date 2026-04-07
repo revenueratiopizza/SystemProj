@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 1322991455}
   - component: {fileID: 1322991457}
   - component: {fileID: 1322991454}
+  - component: {fileID: 1322991458}
   m_Layer: 0
   m_Name: PlayerNick
   m_TagString: Untagged
@@ -276,8 +277,8 @@ MonoBehaviour:
     m_ActionName: 'Player/Look[/Mouse/delta]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1322991457}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+      - m_Target: {fileID: 1322991458}
+        m_TargetAssemblyTypeName: BulletSpawner, Assembly-CSharp
         m_MethodName: OnAttack
         m_Mode: 0
         m_Arguments:
@@ -447,6 +448,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
   movement: {x: 0, y: 0}
+--- !u!114 &1322991458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322991452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44cfe20b931031e499306c83e593f593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletSpawner
+  bulletPrefab: {fileID: 8596711893606358716, guid: cbaff6925fdba77458e00276701d9942, type: 3}
 --- !u!1 &2008185641
 GameObject:
   m_ObjectHideFlags: 0
