@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8651232781171173454}
   m_Layer: 0
   m_Name: PlayerNick
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,4 +250,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44cfe20b931031e499306c83e593f593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletSpawner
-  bulletPrefab: {fileID: 8596711893606358716, guid: cbaff6925fdba77458e00276701d9942, type: 3}
+  bulletPrefab: {fileID: 0}

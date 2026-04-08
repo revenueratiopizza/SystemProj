@@ -210,7 +210,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &766593679
+--- !u!1001 &390666420
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -262,11 +262,64 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerNick
       objectReference: {fileID: 0}
+    - target: {fileID: 5639739656651408900, guid: 61a2b726ce37cac4a83bd7667f6438a9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651232781171173454, guid: 61a2b726ce37cac4a83bd7667f6438a9, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8596711893606358716, guid: cbaff6925fdba77458e00276701d9942, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61a2b726ce37cac4a83bd7667f6438a9, type: 3}
+--- !u!1 &965051831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 965051832}
+  - component: {fileID: 965051833}
+  m_Layer: 0
+  m_Name: ZombieSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &965051832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965051831}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &965051833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965051831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2071dc95f00a15e4a9a6157650f6e82a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZombieSpawner
+  zombiePrefab: {fileID: 4990754128445135754, guid: 7a78f4bbff7f5b847b679e724e300d63, type: 3}
 --- !u!1 &2008185641
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,5 +462,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2008185644}
-  - {fileID: 766593679}
+  - {fileID: 390666420}
   - {fileID: 301104867}
+  - {fileID: 965051832}
