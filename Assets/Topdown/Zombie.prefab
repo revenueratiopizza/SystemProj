@@ -106,4 +106,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ZombieMovement
   speed: 4
   movement: {x: 0, y: 0}
-  target: {fileID: 0}
+  target: {fileID: 5639739656651408900, guid: 61a2b726ce37cac4a83bd7667f6438a9, type: 3}
